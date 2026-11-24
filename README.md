@@ -47,12 +47,12 @@ sudo apt update && sudo apt install -y fzf xclip curl
 
 **2. تثبيت أداة الذكاء الاصطناعي المجانية (`tgpt`):**
 ```bash
-curl -sSL https://githubusercontent.com | bash -s /usr/local/bin
+curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash -s /usr/local/bin
 ```
 
 **3. تحميل وتشغيل السكريبت:**
 ```bash
-git clone https://github.com
+git clone https://github.com/tego128-pixel/mint-history-ai.git
 cd mint-history-ai
 chmod +x mint-command.sh
 ./mint-command.sh
