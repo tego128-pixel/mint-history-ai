@@ -28,7 +28,7 @@ grep -v -E "^(ls|cd|exit|clear|\s*)$" "$CLEAN_HIST" > "${CLEAN_HIST}.tmp" && mv 
 toggle_list() {
     if [ "$(cat "$MODE_FILE")" = "hist" ]; then
         echo "notes" > "$MODE_FILE"
-        grep -v -E "^(=+|-+|\s*)$" "$P_NOTS_FILE"
+        grep -v -E "^(=+|-+|\s*)$" "$P_NOTS_FILE" | awk '{a[i++]=$0} END {for (j=i-1; j>=0;) print a[j--] }'
     else
         echo "hist" > "$MODE_FILE"
         awk '{a[i++]=$0} END {for (j=i-1; j>=0;) print a[j--] }' "$CLEAN_HIST" | awk '!seen[$0]++'
