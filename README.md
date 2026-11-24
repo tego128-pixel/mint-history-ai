@@ -85,4 +85,4 @@ In Linux, `.bash_history` is a hidden file in your Home directory that logs ever
 
 <img width="1079" height="340" alt="صوره الباشهيستورى ذاكره اوامر الترمنال" src="https://github.com/user-attachments/assets/96f4cfec-f94b-4ccc-8764-e08490202e63" />
 <img width="1381" height="893" alt="tgpt(ai in teminal)" src="https://github.com/user-attachments/assets/318d41a4-2ec2-46ab-94b2-9218a0642d82" />
-<img width="325" height="315" alt="in  home" src="https://github.com/user-attachments/assets/5af9fb0c-9b9f-4097-a862-94cc26ae43a0" />
+
