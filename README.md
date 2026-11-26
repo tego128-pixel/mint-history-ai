@@ -1,6 +1,6 @@
 # 🚀 Mint History AI (`fzf` + `tgpt`)
-sha256:d688d8e6e58f7a0c12a2f5d7c3df1c25ec1279674306140119fae9dbfe3f4112
-sha256:d1429fb134e12c8ec3a4df463bc628d129a7dbeedfd7fc5d632c106bfd453382
+[sha256:d688d8e6e58f7a0c12a2f5d7c3df1c25ec1279674306140119fae9dbfe3f4112
+sha256:d1429fb134e12c8ec3a4df463bc628d129a7dbeedfd7fc5d632c106bfd453382](https://github.com/tego128-pixel/mint-history-ai/releases/download/v1.0/mint-history-ai_1.1_amd64.deb)
 ## 📱 لمستخدمي الموبايل (Termux): وداعاً لمعاناة كتابة الأوامر الطويلة!
 إذا كنت تستخدم **Termux** على الأندرويد، فأنت تعرف مدى صعوبة كتابة أو تعديل الأوامر الطويلة على شاشة الموبايل. يوفر لك المشروع ملفاً مخصصاً (**`termux-command.sh`**) يحل هذه المشكلة تماماً:
 - **استدعاء فوري بدون كتابة:** ابحث في سجلك أو كشكول أوامرك (`p-nots`) وانسخ الأمر الطويل للحافظة بضغطة زر واحدة (`Ctrl + Y`).
