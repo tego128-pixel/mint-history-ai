@@ -55,10 +55,11 @@ tac "$CLEAN_HIST" | awk '!seen[$0]++' | \
 fzf --prompt="📂 السجل ($USER_SHELL) > " \
     --header="[Tab]: تبديل (السجل ⇄ p-nots) | [Alt+C]: نسخ | [Alt+P]: حفظ بشرح | [Alt+G]: شرح | [ESC]: خروج" \
     --bind 'tab:reload(bash -c toggle_list)+change-prompt(🔄 تم التبديل > )' \
+    --bind "alt-c:execute-silent(echo -n {} | sed 's/\s*#.*//' | xclip -selection clipboard)" \
+    --bind 'alt-p:execute(if [ "$(cat "$MODE_FILE")" = "hist" ]; then CMD={}; echo -e "⏳ جاري تلخيص وحفظ الأمر..." && DESC=$(tgpt -q "اشرح هذا الأمر في 5 كلمات عربية فقط بدون أي مقدمات أو رموز: $CMD" | tr -d "\n*\`") && echo "$CMD   # $DESC" >> "$P_NOTS_FILE" && echo -e "✅ تم الحفظ:\n$CMD   # $DESC" && sleep 1.5; fi)' \
     --bind 'alt-g:execute(CMD=$(echo {} | sed "s/\s*#.*//"); echo -e "⏳ جاري الشرح...\n" && tgpt -q "اشرح هذا الأمر في لينكس باختصار شديد وبالعامية المصرية بدون أي رموز تنسيق مثل النجوم: $CMD" | tr -d "*\`" && echo -e "\n--- اضغط Enter للعودة ---" && read)' \
-    --bind 'alt-p:execute(if [ "$(cat "$MODE_FILE")" = "hist" ]; then CMD={}; echo -e "⏳ جاري تلخيص وحفظ الأمر..." && DESC=$(tgpt -q "اشرح هذا الأمر في 5 كلمات عربية فقط بدون أي مقدمات أو رموز: $CMD" | tr -d "\n") && echo "$CMD   # $DESC" >> "$P_NOTS_FILE" && echo -e "✅ تم الحفظ:\n$CMD   # $DESC" && sleep 1.5; fi)' \
-    --bind 'alt-g:execute(CMD=$(echo {} | sed "s/\s*#.*//"); echo -e "⏳ جاري الشرح...\n" && tgpt -q "اشرح هذا الأمر في لينكس باختصار شديد وبالعامية المصرية: $CMD" && echo -e "\n--- اضغط Enter للعودة ---" && read)' \
     --height=100% --layout=reverse --border
 
 # --- 4. تنظيف تلقائي ---
 rm -f "$MODE_FILE" "$CLEAN_HIST" "$HOME"/.bash_history-*.tmp 2>/dev/null
+
