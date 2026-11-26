@@ -42,10 +42,7 @@ awk '{a[i++]=$0} END {for (j=i-1; j>=0;) print a[j--] }' "$CLEAN_HIST" | awk '!s
 fzf --prompt="📱 السجل ($USER_SHELL) > " \
     --header="[Tab]: تبديل | [Ctrl+Y]: نسخ | [Ctrl+P]: حفظ بشرح | [Ctrl+G]: شرح" \
     --bind 'tab:reload(bash -c toggle_list)+change-prompt(🔄 تم التبديل > )' \
-    --bind "ctrl-y:execute-silent(echo -n {} | sed 's/\s*#.*//' | termux-clipboard-set)" \
+    --bind "ctrl-y:execute-silent(echo -n {} | sed 's/\s*#.*//' | timeout 2 termux-clipboard-set)" \
     --bind 'ctrl-p:execute(if [ "$(cat "$MODE_FILE")" = "hist" ]; then CMD={}; DESC=$(tgpt -q "اشرح هذا الأمر في 5 كلمات عربية فقط: $CMD" | tr -d "\n") && echo "$CMD   # $DESC" >> "$P_NOTS_FILE" && echo "✅ تم الحفظ" && sleep 1; fi)' \
-    --bind 'ctrl-g:execute(CMD=$(echo {} | sed "s/\s*#.*//"); tgpt -q "اشرح هذا الأمر باختصار شديد وبالعامية المصرية: $CMD" && echo -e "\n--- اضغط Enter ---" && read)' \
+    --bind 'ctrl-g:execute(CMD=$(echo {} | sed "s/\s*#.*//"); echo -e "⏳ جاري الشرح...\n" && tgpt -q "اشرح هذا الأمر باختصار شديد وبالعامية المصرية بدون أي رموز تنسيق مثل النجوم: $CMD" | tr -d "*\`" && echo -e "\n--- اضغط Enter ---" && read)' \
     --height=100% --layout=reverse --border
-
-# --- 4. تنظيف تلقائي ---
-rm -f "$MODE_FILE" "$CLEAN_HIST" 2>/dev/null
