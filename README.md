@@ -1,15 +1,21 @@
-# 🚀 Mint History AI (`fzf` + `tgpt`)
+# 🚀 Mint History AI (fzf + tgpt)
 
-## 📥 التحميل والتثبيت المباشر (الإصدار 1.1)
+## 📥 التحميل والتثبيت (الإصدار 1.1)
 
-* 💻 **للكمبيوتر (Linux Mint / Ubuntu / Debian):**
-[https://github.com
-](https://github.com/tego128-pixel/mint-history-ai/releases/download/v1.0/mint-history-ai_1.1_amd64.deb)  * **طريقة التثبيت:** اضغط مرتين على الملف بعد التحميل واختر **Install**، وستظهر أيقونة البرنامج على سطح المكتب تلقائياً.
+لتحميل نسخ الكمبيوتر (`.deb`) والموبايل (`Termux`)، اضغط على رابط صفحة التحميلات الرسمي بالأسفل:
 
-* 📱 **للموبايل (Termux Android):**
-[https://github.com
-](https://github.com/tego128-pixel/mint-history-ai/releases/download/v1.0/mint-history-termux_1.1_aarch64.deb)  * **طريقة التثبيت والتشغيل بأمر واحد في Termux:**
-    ```bash
+https://github.com
+
+### 💻 طريقة التثبيت على الكمبيوتر (Linux Mint / Ubuntu / Debian)
+* حمّل ملف `mint-history-ai_1.1_amd64.deb` من الرابط أعلاه، ثم اضغط عليه مرتين واختر **Install** (ستظهر أيقونة البرنامج على سطح المكتب تلقائياً).
+
+### 📱 طريقة التثبيت على الموبايل (Termux Android)
+* حمّل ملف `mint-history-termux_1.1_aarch64.deb` من الرابط أعلاه، ثم افتح Termux ونفّذ هذا الأمر:
+```bash
+termux-setup-storage && pkg update && pkg install -y ~/storage/downloads/mint-history-termux_1.1_aarch64.deb
+```
+
+---
 
 ### 🇸🇦 الشرح للمبتدئين في لينكس:
 في نظام لينكس، يوجد ملف مخفي في مجلدك الشخصي (Home) اسمه **`.bash_history`**، وهو بمثابة **سجل** يُخزّن فيه كل الأوامر التي تكتبها في التيرمينال.
