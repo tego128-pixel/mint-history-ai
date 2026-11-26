@@ -10,30 +10,6 @@
 [https://github.com
 ](https://github.com/tego128-pixel/mint-history-ai/releases/download/v1.0/mint-history-termux_1.1_aarch64.deb)  * **طريقة التثبيت والتشغيل بأمر واحد في Termux:**
     ```bash
-    termux-setup-storage && pkg update && pkg install -y ~/storage/downloads/mint-history-termux_1.1_aarch64.deb
-    ```
-    *(بعد التثبيت اكتب `mint-history` أو حرف `h` فقط لتشغيل الأداة فوراً).*
-](https://github.com)
-  * **طريقة التثبيت والتشغيل بأمر واحد في Termux:**
-    ```bash
-    termux-setup-storage && pkg update && pkg install -y ~/storage/downloads/mint-history-termux_1.1_aarch64.deb
-    ```
-    *(بعد التثبيت اكتب `mint-history` أو حرف `h` فقط لتشغيل الأداة فوراً).*
-
-## 📱 لمستخدمي الموبايل (Termux): وداعاً لمعاناة كتابة الأوامر الطويلة!
-إذا كنت تستخدم **Termux** على الأندرويد، فأنت تعرف مدى صعوبة كتابة أو تعديل الأوامر الطويلة على شاشة الموبايل. يوفر لك المشروع ملفاً مخصصاً (**`termux-command.sh`**) يحل هذه المشكلة تماماً:
-- **استدعاء فوري بدون كتابة:** ابحث في سجلك أو كشكول أوامرك (`p-nots`) وانسخ الأمر الطويل للحافظة بضغطة زر واحدة (`Ctrl + Y`).
-- **سجل منظم ومشروح:** احفظ أوامرك المهمة مع ملخص عربي لوظيفتها (`Ctrl + P`) أو اطلب شرحاً فورياً لأي أمر (`Ctrl + G`)، وتنقل بين السجل والملاحظات بـ **`Tab`**.
-
-### ▶️ تشغيل نسخة الموبايل (Termux):
-```bash
-pkg update && pkg install -y fzf termux-api curl
-curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash -s $PREFIX/bin
-chmod +x termux-command.sh
-./termux-command.sh
-```
-
----
 
 ### 🇸🇦 الشرح للمبتدئين في لينكس:
 في نظام لينكس، يوجد ملف مخفي في مجلدك الشخصي (Home) اسمه **`.bash_history`**، وهو بمثابة **سجل** يُخزّن فيه كل الأوامر التي تكتبها في التيرمينال.
