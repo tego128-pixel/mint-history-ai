@@ -4,6 +4,8 @@
 
 * **لتحميل نسخ الكمبيوتر والموبايل:** [
 * https://github.com/tego128-pixel/mint-history-ai/releases/download/v1.0/mint-history-ai_1.1_amd64.deb    #mint-history-ai_1.1_amd64
+
+* 
 * https://github.com/tego128-pixel/mint-history-ai/releases/download/v1.0/mint-history-termux_1.1_aarch64.deb  #mint-history-termux_1.1_aarch64.deb
 ### 💻 طريقة التثبيت على الكمبيوتر (Linux Mint / Ubuntu / Debian)
 * حمّل ملف `mint-history-ai_1.1_amd64.deb` من صفحة التحميلات أعلاه، ثم اضغط عليه مرتين واختر **Install** (ستظهر أيقونة البرنامج على سطح المكتب تلقائياً).
