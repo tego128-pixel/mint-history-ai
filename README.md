@@ -2,15 +2,13 @@
 
 ## 📥 التحميل والتثبيت (الإصدار 1.1)
 
-لتحميل نسخ الكمبيوتر (`.deb`) والموبايل (`Termux`)، اضغط على رابط صفحة التحميلات الرسمي بالأسفل:
-
-https://github.com
+* **لتحميل نسخ الكمبيوتر والموبايل:** [اضغط هنا لفتح صفحة التحميلات الرسمية (Releases)](https://github.com)
 
 ### 💻 طريقة التثبيت على الكمبيوتر (Linux Mint / Ubuntu / Debian)
-* حمّل ملف `mint-history-ai_1.1_amd64.deb` من الرابط أعلاه، ثم اضغط عليه مرتين واختر **Install** (ستظهر أيقونة البرنامج على سطح المكتب تلقائياً).
+* حمّل ملف `mint-history-ai_1.1_amd64.deb` من صفحة التحميلات أعلاه، ثم اضغط عليه مرتين واختر **Install** (ستظهر أيقونة البرنامج على سطح المكتب تلقائياً).
 
 ### 📱 طريقة التثبيت على الموبايل (Termux Android)
-* حمّل ملف `mint-history-termux_1.1_aarch64.deb` من الرابط أعلاه، ثم افتح Termux ونفّذ هذا الأمر:
+* حمّل ملف `mint-history-termux_1.1_aarch64.deb` من صفحة التحميلات أعلاه، ثم افتح Termux ونفّذ هذا الأمر:
 ```bash
 termux-setup-storage && pkg update && pkg install -y ~/storage/downloads/mint-history-termux_1.1_aarch64.deb
 ```
