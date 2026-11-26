@@ -1,4 +1,6 @@
 # 🚀 Mint History AI (`fzf` + `tgpt`)
+sha256:d688d8e6e58f7a0c12a2f5d7c3df1c25ec1279674306140119fae9dbfe3f4112
+sha256:d1429fb134e12c8ec3a4df463bc628d129a7dbeedfd7fc5d632c106bfd453382
 ## 📱 لمستخدمي الموبايل (Termux): وداعاً لمعاناة كتابة الأوامر الطويلة!
 إذا كنت تستخدم **Termux** على الأندرويد، فأنت تعرف مدى صعوبة كتابة أو تعديل الأوامر الطويلة على شاشة الموبايل. يوفر لك المشروع ملفاً مخصصاً (**`termux-command.sh`**) يحل هذه المشكلة تماماً:
 - **استدعاء فوري بدون كتابة:** ابحث في سجلك أو كشكول أوامرك (`p-nots`) وانسخ الأمر الطويل للحافظة بضغطة زر واحدة (`Ctrl + Y`).
@@ -63,7 +65,6 @@ chmod +x mint-command.sh
 ---
 
 ### 🇺🇸 English Overview (For Linux Beginners):
-
 In Linux, `.bash_history` is a hidden file in your Home directory that logs every command you run in the terminal. This script connects your command history to **`fzf`** (a blazing-fast fuzzy finder) and **`tgpt`** (a free CLI AI tool that requires no API key).
 
 #### 💡 How It Works:
