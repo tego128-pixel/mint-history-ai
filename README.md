@@ -1,11 +1,19 @@
-# 🚀 Mint History AI (`fzf` + `tgpt`)## 📥 التحميل والتثبيت المباشر (الإصدار 1.1)
+# 🚀 Mint History AI (`fzf` + `tgpt`)
 
-* 💻 **للكمبيوتر (Linux Mint / Ubuntu / Debian):**  
-  [اضغط هنا لتحميل mint-history-ai_1.1_amd64.deb](https://github.com)
+## 📥 التحميل والتثبيت المباشر (الإصدار 1.1)
+
+* 💻 **للكمبيوتر (Linux Mint / Ubuntu / Debian):**
+https://github.com
   * **طريقة التثبيت:** اضغط مرتين على الملف بعد التحميل واختر **Install**، وستظهر أيقونة البرنامج على سطح المكتب تلقائياً.
 
-* 📱 **للموبايل (Termux Android):**  
-  [اضغط هنا لتحميل mint-history-termux_1.1_aarch64.deb](https://github.com)
+* 📱 **للموبايل (Termux Android):**
+https://github.com
+  * **طريقة التثبيت والتشغيل بأمر واحد في Termux:**
+    ```bash
+    termux-setup-storage && pkg update && pkg install -y ~/storage/downloads/mint-history-termux_1.1_aarch64.deb
+    ```
+    *(بعد التثبيت اكتب `mint-history` أو حرف `h` فقط لتشغيل الأداة فوراً).*
+](https://github.com)
   * **طريقة التثبيت والتشغيل بأمر واحد في Termux:**
     ```bash
     termux-setup-storage && pkg update && pkg install -y ~/storage/downloads/mint-history-termux_1.1_aarch64.deb
